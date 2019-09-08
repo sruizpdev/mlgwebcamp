@@ -201,9 +201,10 @@ h2 {
 }
 .logo {
   width: 80%;
+  float: left;
 }
-.logo img{
-  width: 100%
+.logo img {
+  width: 100%;
 }
 @media (min-width: 768px) {
   .logo {
@@ -211,16 +212,70 @@ h2 {
     float: left;
   }
 }
-.navegacion-principal{
+.navegacion-principal a {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.navegacion-principal a:hover {
+  background-color: #fe4918;
+}
+.navegacion-principal a:last-child {
+  border: 2px solid #fe4918;
+  color: #fe4918;
+}
+.navegacion-principal a:last-child:hover {
+  border: 2px solid #fe4918;
+  color: white;
+}
+.navegacion-principal {
   display: none;
 }
 @media (min-width: 768px) {
-  .navegacion-principal{
+  .navegacion-principal {
     width: 66.6%;
     float: right;
     text-align: right;
-    display:block;
+    display: block;
   }
+  .navegacion-principal a {
+    margin-right: 10px;
+    padding: 10px 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px 0 0;
+  }
+  .;
+}
+.menu-movil {
+  float: right;
+  width: 60px;
+  display: block;
+  text-align: right;
+  margin-top: 12px;
+}
+.menu-movil:hover {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .menu-movil {
+    display: none;
+  }
+}
+.menu-movil span {
+  height: 8px;
+  background-color: white;
+  display: block;
+  margin-bottom: 6px;
 }
 
 /* ==========================================================================
